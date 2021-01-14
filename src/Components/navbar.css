@@ -1,0 +1,94 @@
+@font-face {
+    font-family: poppinsExtraLight;
+    src: url(../Poppins-ExtraLight.ttf); 
+  }
+
+.navbar2{
+    font-family: poppinsExtraLight;
+    position: relative;
+    z-index: 2;
+    margin-top: 25px;   
+    color: white;
+    background-color: black;
+    display: flex;
+}
+.navbar-list{
+    display: flex;
+    list-style: none;
+    width: fit-content;
+}
+.navbar-extended{
+    display: none;
+}
+.navbar-list .navbar-li{
+    padding: 0px 5px 0px 5px;
+}
+.navbar-list .navbar-li:hover{
+    
+}
+.navbar-list2 .navbar-li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar-list2 .navbar-li a:hover{
+    cursor: url(./../cursor\ hover.svg) 18 18 ,pointer;
+}
+.navbar-list2 .navbar-li{
+    padding: 0px 25px 0px 25px;
+    
+}
+.navbar-list2 .navbar-li:hover{
+    cursor: url(./../cursor\ hover.svg) 18 18  ,auto;
+}
+.navbar-list{
+    float: left;
+    margin-left: 5%;
+    font-size: 20px;
+}
+.navbar-list2{
+    float: right;
+    display: flex;
+    list-style: none;
+    margin-right: 5%;
+    margin-left: auto;
+    order: 2;
+    font-size: 20px;
+}
+.navbar-logo{
+    float: left;
+}
+.navbar-menu{
+    display: flex;
+    float: right;
+    font-size: medium;
+    font-weight: bold;
+}
+@media (max-width:767px){
+    .compressed-navbar-menu{
+        display: none;
+    }
+}
+@media (max-width:767px){
+    .navbar-extended{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-extended div{
+        padding: 5px;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .compressed-navbar-menu{
+        float: right;
+        display: flex;
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5%;
+        margin-left: auto;
+        order: 2;
+    }
+}
